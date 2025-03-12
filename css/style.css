@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+}
+#wrap{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+}
+.menu{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    border-radius: 30px 0 0 30px;
+    overflow: hidden;
+}
+.menu li{
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.menu li span{
+    font-size: 0;
+}
+.menu li.Click{
+    background-color: black;
+    color: white;
+}
+.menu li.Click span{
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.content-wrap{
+    position: relative;
+    width: 600px;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 0 30px 30px 0;
+
+}
+.content{
+    position: absolute;
+    background-color: plum;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    z-index: 0; 
+    color: white;
+    gap: 20px;
+}
+.content.On{
+    opacity: 1;
+    z-index: 1;
+}
+.content h2{
+    font-size: 60px;
+    
+}
+.cont-btn{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    color: black;
+}
+.content:nth-child(1){
+    background-color: rgb(253, 138, 6);
+}
+.content:nth-child(2){
+    background-color: rgb(182, 24, 255);
+}
+.content:nth-child(3){
+    background-color: rgb(219, 4, 105);
+}
+.content:nth-child(4){
+    background-color: rgb(192, 5, 167);
+}
